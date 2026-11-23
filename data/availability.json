@@ -1,0 +1,1602 @@
+[
+  {
+    "slot_id": "SLOT-0001",
+    "venue_id": "VEN-001",
+    "date": "2026-12-12",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0002",
+    "venue_id": "VEN-001",
+    "date": "2026-12-13",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0003",
+    "venue_id": "VEN-001",
+    "date": "2026-12-14",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0004",
+    "venue_id": "VEN-001",
+    "date": "2026-12-15",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0005",
+    "venue_id": "VEN-001",
+    "date": "2026-12-16",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0006",
+    "venue_id": "VEN-002",
+    "date": "2026-12-13",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0007",
+    "venue_id": "VEN-002",
+    "date": "2026-12-14",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0008",
+    "venue_id": "VEN-002",
+    "date": "2026-12-15",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0009",
+    "venue_id": "VEN-002",
+    "date": "2026-12-16",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0010",
+    "venue_id": "VEN-002",
+    "date": "2026-12-17",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0011",
+    "venue_id": "VEN-003",
+    "date": "2026-12-14",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0012",
+    "venue_id": "VEN-003",
+    "date": "2026-12-15",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0013",
+    "venue_id": "VEN-003",
+    "date": "2026-12-16",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0014",
+    "venue_id": "VEN-003",
+    "date": "2026-12-17",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0015",
+    "venue_id": "VEN-003",
+    "date": "2026-12-18",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0016",
+    "venue_id": "VEN-004",
+    "date": "2026-12-15",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0017",
+    "venue_id": "VEN-004",
+    "date": "2026-12-16",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0018",
+    "venue_id": "VEN-004",
+    "date": "2026-12-17",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0019",
+    "venue_id": "VEN-004",
+    "date": "2026-12-18",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0020",
+    "venue_id": "VEN-004",
+    "date": "2026-12-19",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0021",
+    "venue_id": "VEN-005",
+    "date": "2026-12-16",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0022",
+    "venue_id": "VEN-005",
+    "date": "2026-12-17",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0023",
+    "venue_id": "VEN-005",
+    "date": "2026-12-18",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0024",
+    "venue_id": "VEN-005",
+    "date": "2026-12-19",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0025",
+    "venue_id": "VEN-005",
+    "date": "2026-12-20",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0026",
+    "venue_id": "VEN-006",
+    "date": "2026-12-17",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0027",
+    "venue_id": "VEN-006",
+    "date": "2026-12-18",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0028",
+    "venue_id": "VEN-006",
+    "date": "2026-12-19",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0029",
+    "venue_id": "VEN-006",
+    "date": "2026-12-20",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0030",
+    "venue_id": "VEN-006",
+    "date": "2026-12-21",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0031",
+    "venue_id": "VEN-007",
+    "date": "2026-12-18",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0032",
+    "venue_id": "VEN-007",
+    "date": "2026-12-19",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0033",
+    "venue_id": "VEN-007",
+    "date": "2026-12-20",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0034",
+    "venue_id": "VEN-007",
+    "date": "2026-12-21",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0035",
+    "venue_id": "VEN-007",
+    "date": "2026-12-22",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0036",
+    "venue_id": "VEN-008",
+    "date": "2026-12-19",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0037",
+    "venue_id": "VEN-008",
+    "date": "2026-12-20",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0038",
+    "venue_id": "VEN-008",
+    "date": "2026-12-21",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0039",
+    "venue_id": "VEN-008",
+    "date": "2026-12-22",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0040",
+    "venue_id": "VEN-008",
+    "date": "2026-12-23",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0041",
+    "venue_id": "VEN-009",
+    "date": "2026-12-20",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0042",
+    "venue_id": "VEN-009",
+    "date": "2026-12-21",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0043",
+    "venue_id": "VEN-009",
+    "date": "2026-12-22",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0044",
+    "venue_id": "VEN-009",
+    "date": "2026-12-23",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0045",
+    "venue_id": "VEN-009",
+    "date": "2026-12-24",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0046",
+    "venue_id": "VEN-010",
+    "date": "2026-12-21",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0047",
+    "venue_id": "VEN-010",
+    "date": "2026-12-22",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0048",
+    "venue_id": "VEN-010",
+    "date": "2026-12-23",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0049",
+    "venue_id": "VEN-010",
+    "date": "2026-12-24",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0050",
+    "venue_id": "VEN-010",
+    "date": "2026-12-25",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0051",
+    "venue_id": "VEN-011",
+    "date": "2026-12-22",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0052",
+    "venue_id": "VEN-011",
+    "date": "2026-12-23",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0053",
+    "venue_id": "VEN-011",
+    "date": "2026-12-24",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0054",
+    "venue_id": "VEN-011",
+    "date": "2026-12-25",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0055",
+    "venue_id": "VEN-011",
+    "date": "2026-12-26",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0056",
+    "venue_id": "VEN-012",
+    "date": "2026-12-23",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0057",
+    "venue_id": "VEN-012",
+    "date": "2026-12-24",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0058",
+    "venue_id": "VEN-012",
+    "date": "2026-12-25",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0059",
+    "venue_id": "VEN-012",
+    "date": "2026-12-26",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0060",
+    "venue_id": "VEN-012",
+    "date": "2026-12-12",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0061",
+    "venue_id": "VEN-013",
+    "date": "2026-12-24",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0062",
+    "venue_id": "VEN-013",
+    "date": "2026-12-25",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0063",
+    "venue_id": "VEN-013",
+    "date": "2026-12-26",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0064",
+    "venue_id": "VEN-013",
+    "date": "2026-12-12",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0065",
+    "venue_id": "VEN-013",
+    "date": "2026-12-13",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0066",
+    "venue_id": "VEN-014",
+    "date": "2026-12-25",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0067",
+    "venue_id": "VEN-014",
+    "date": "2026-12-26",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0068",
+    "venue_id": "VEN-014",
+    "date": "2026-12-12",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0069",
+    "venue_id": "VEN-014",
+    "date": "2026-12-13",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0070",
+    "venue_id": "VEN-014",
+    "date": "2026-12-14",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0071",
+    "venue_id": "VEN-015",
+    "date": "2026-12-26",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0072",
+    "venue_id": "VEN-015",
+    "date": "2026-12-12",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0073",
+    "venue_id": "VEN-015",
+    "date": "2026-12-13",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0074",
+    "venue_id": "VEN-015",
+    "date": "2026-12-14",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0075",
+    "venue_id": "VEN-015",
+    "date": "2026-12-15",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0076",
+    "venue_id": "VEN-016",
+    "date": "2026-12-12",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0077",
+    "venue_id": "VEN-016",
+    "date": "2026-12-13",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0078",
+    "venue_id": "VEN-016",
+    "date": "2026-12-14",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0079",
+    "venue_id": "VEN-016",
+    "date": "2026-12-15",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0080",
+    "venue_id": "VEN-016",
+    "date": "2026-12-16",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0081",
+    "venue_id": "VEN-017",
+    "date": "2026-12-13",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0082",
+    "venue_id": "VEN-017",
+    "date": "2026-12-14",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0083",
+    "venue_id": "VEN-017",
+    "date": "2026-12-15",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0084",
+    "venue_id": "VEN-017",
+    "date": "2026-12-16",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0085",
+    "venue_id": "VEN-017",
+    "date": "2026-12-17",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0086",
+    "venue_id": "VEN-018",
+    "date": "2026-12-14",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0087",
+    "venue_id": "VEN-018",
+    "date": "2026-12-15",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0088",
+    "venue_id": "VEN-018",
+    "date": "2026-12-16",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0089",
+    "venue_id": "VEN-018",
+    "date": "2026-12-17",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0090",
+    "venue_id": "VEN-018",
+    "date": "2026-12-18",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0091",
+    "venue_id": "VEN-019",
+    "date": "2026-12-15",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0092",
+    "venue_id": "VEN-019",
+    "date": "2026-12-16",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0093",
+    "venue_id": "VEN-019",
+    "date": "2026-12-17",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0094",
+    "venue_id": "VEN-019",
+    "date": "2026-12-18",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0095",
+    "venue_id": "VEN-019",
+    "date": "2026-12-19",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0096",
+    "venue_id": "VEN-020",
+    "date": "2026-12-16",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0097",
+    "venue_id": "VEN-020",
+    "date": "2026-12-17",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0098",
+    "venue_id": "VEN-020",
+    "date": "2026-12-18",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0099",
+    "venue_id": "VEN-020",
+    "date": "2026-12-19",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0100",
+    "venue_id": "VEN-020",
+    "date": "2026-12-20",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0101",
+    "venue_id": "VEN-021",
+    "date": "2026-12-17",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0102",
+    "venue_id": "VEN-021",
+    "date": "2026-12-18",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0103",
+    "venue_id": "VEN-021",
+    "date": "2026-12-19",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0104",
+    "venue_id": "VEN-021",
+    "date": "2026-12-20",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0105",
+    "venue_id": "VEN-021",
+    "date": "2026-12-21",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0106",
+    "venue_id": "VEN-022",
+    "date": "2026-12-18",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0107",
+    "venue_id": "VEN-022",
+    "date": "2026-12-19",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0108",
+    "venue_id": "VEN-022",
+    "date": "2026-12-20",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0109",
+    "venue_id": "VEN-022",
+    "date": "2026-12-21",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0110",
+    "venue_id": "VEN-022",
+    "date": "2026-12-22",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0111",
+    "venue_id": "VEN-023",
+    "date": "2026-12-19",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0112",
+    "venue_id": "VEN-023",
+    "date": "2026-12-20",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0113",
+    "venue_id": "VEN-023",
+    "date": "2026-12-21",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0114",
+    "venue_id": "VEN-023",
+    "date": "2026-12-22",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0115",
+    "venue_id": "VEN-023",
+    "date": "2026-12-23",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0116",
+    "venue_id": "VEN-024",
+    "date": "2026-12-20",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0117",
+    "venue_id": "VEN-024",
+    "date": "2026-12-21",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0118",
+    "venue_id": "VEN-024",
+    "date": "2026-12-22",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0119",
+    "venue_id": "VEN-024",
+    "date": "2026-12-23",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0120",
+    "venue_id": "VEN-024",
+    "date": "2026-12-24",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0121",
+    "venue_id": "VEN-025",
+    "date": "2026-12-21",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0122",
+    "venue_id": "VEN-025",
+    "date": "2026-12-22",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0123",
+    "venue_id": "VEN-025",
+    "date": "2026-12-23",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0124",
+    "venue_id": "VEN-025",
+    "date": "2026-12-24",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0125",
+    "venue_id": "VEN-025",
+    "date": "2026-12-25",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0126",
+    "venue_id": "VEN-026",
+    "date": "2026-12-22",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0127",
+    "venue_id": "VEN-026",
+    "date": "2026-12-23",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0128",
+    "venue_id": "VEN-026",
+    "date": "2026-12-24",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0129",
+    "venue_id": "VEN-026",
+    "date": "2026-12-25",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0130",
+    "venue_id": "VEN-026",
+    "date": "2026-12-26",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0131",
+    "venue_id": "VEN-027",
+    "date": "2026-12-23",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0132",
+    "venue_id": "VEN-027",
+    "date": "2026-12-24",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0133",
+    "venue_id": "VEN-027",
+    "date": "2026-12-25",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0134",
+    "venue_id": "VEN-027",
+    "date": "2026-12-26",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0135",
+    "venue_id": "VEN-027",
+    "date": "2026-12-12",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0136",
+    "venue_id": "VEN-028",
+    "date": "2026-12-24",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0137",
+    "venue_id": "VEN-028",
+    "date": "2026-12-25",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0138",
+    "venue_id": "VEN-028",
+    "date": "2026-12-26",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0139",
+    "venue_id": "VEN-028",
+    "date": "2026-12-12",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0140",
+    "venue_id": "VEN-028",
+    "date": "2026-12-13",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0141",
+    "venue_id": "VEN-029",
+    "date": "2026-12-25",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0142",
+    "venue_id": "VEN-029",
+    "date": "2026-12-26",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0143",
+    "venue_id": "VEN-029",
+    "date": "2026-12-12",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0144",
+    "venue_id": "VEN-029",
+    "date": "2026-12-13",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0145",
+    "venue_id": "VEN-029",
+    "date": "2026-12-14",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0146",
+    "venue_id": "VEN-030",
+    "date": "2026-12-26",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0147",
+    "venue_id": "VEN-030",
+    "date": "2026-12-12",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0148",
+    "venue_id": "VEN-030",
+    "date": "2026-12-13",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0149",
+    "venue_id": "VEN-030",
+    "date": "2026-12-14",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0150",
+    "venue_id": "VEN-030",
+    "date": "2026-12-15",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0151",
+    "venue_id": "VEN-031",
+    "date": "2026-12-12",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0152",
+    "venue_id": "VEN-031",
+    "date": "2026-12-13",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0153",
+    "venue_id": "VEN-031",
+    "date": "2026-12-14",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0154",
+    "venue_id": "VEN-031",
+    "date": "2026-12-15",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0155",
+    "venue_id": "VEN-031",
+    "date": "2026-12-16",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0156",
+    "venue_id": "VEN-032",
+    "date": "2026-12-13",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0157",
+    "venue_id": "VEN-032",
+    "date": "2026-12-14",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0158",
+    "venue_id": "VEN-032",
+    "date": "2026-12-15",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0159",
+    "venue_id": "VEN-032",
+    "date": "2026-12-16",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0160",
+    "venue_id": "VEN-032",
+    "date": "2026-12-17",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0161",
+    "venue_id": "VEN-033",
+    "date": "2026-12-14",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0162",
+    "venue_id": "VEN-033",
+    "date": "2026-12-15",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0163",
+    "venue_id": "VEN-033",
+    "date": "2026-12-16",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0164",
+    "venue_id": "VEN-033",
+    "date": "2026-12-17",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0165",
+    "venue_id": "VEN-033",
+    "date": "2026-12-18",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0166",
+    "venue_id": "VEN-034",
+    "date": "2026-12-15",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0167",
+    "venue_id": "VEN-034",
+    "date": "2026-12-16",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0168",
+    "venue_id": "VEN-034",
+    "date": "2026-12-17",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0169",
+    "venue_id": "VEN-034",
+    "date": "2026-12-18",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0170",
+    "venue_id": "VEN-034",
+    "date": "2026-12-19",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0171",
+    "venue_id": "VEN-035",
+    "date": "2026-12-16",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0172",
+    "venue_id": "VEN-035",
+    "date": "2026-12-17",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0173",
+    "venue_id": "VEN-035",
+    "date": "2026-12-18",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0174",
+    "venue_id": "VEN-035",
+    "date": "2026-12-19",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0175",
+    "venue_id": "VEN-035",
+    "date": "2026-12-20",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0176",
+    "venue_id": "VEN-036",
+    "date": "2026-12-17",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0177",
+    "venue_id": "VEN-036",
+    "date": "2026-12-18",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0178",
+    "venue_id": "VEN-036",
+    "date": "2026-12-19",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0179",
+    "venue_id": "VEN-036",
+    "date": "2026-12-20",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0180",
+    "venue_id": "VEN-036",
+    "date": "2026-12-21",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0181",
+    "venue_id": "VEN-037",
+    "date": "2026-12-18",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0182",
+    "venue_id": "VEN-037",
+    "date": "2026-12-19",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0183",
+    "venue_id": "VEN-037",
+    "date": "2026-12-20",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0184",
+    "venue_id": "VEN-037",
+    "date": "2026-12-21",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0185",
+    "venue_id": "VEN-037",
+    "date": "2026-12-22",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0186",
+    "venue_id": "VEN-038",
+    "date": "2026-12-19",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0187",
+    "venue_id": "VEN-038",
+    "date": "2026-12-20",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0188",
+    "venue_id": "VEN-038",
+    "date": "2026-12-21",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0189",
+    "venue_id": "VEN-038",
+    "date": "2026-12-22",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0190",
+    "venue_id": "VEN-038",
+    "date": "2026-12-23",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0191",
+    "venue_id": "VEN-039",
+    "date": "2026-12-20",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0192",
+    "venue_id": "VEN-039",
+    "date": "2026-12-21",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0193",
+    "venue_id": "VEN-039",
+    "date": "2026-12-22",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0194",
+    "venue_id": "VEN-039",
+    "date": "2026-12-23",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0195",
+    "venue_id": "VEN-039",
+    "date": "2026-12-24",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0196",
+    "venue_id": "VEN-040",
+    "date": "2026-12-21",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0197",
+    "venue_id": "VEN-040",
+    "date": "2026-12-22",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "available": false
+  },
+  {
+    "slot_id": "SLOT-0198",
+    "venue_id": "VEN-040",
+    "date": "2026-12-23",
+    "start_time": "13:00",
+    "end_time": "16:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0199",
+    "venue_id": "VEN-040",
+    "date": "2026-12-24",
+    "start_time": "17:00",
+    "end_time": "20:00",
+    "available": true
+  },
+  {
+    "slot_id": "SLOT-0200",
+    "venue_id": "VEN-040",
+    "date": "2026-12-25",
+    "start_time": "18:00",
+    "end_time": "21:00",
+    "available": true
+  }
+]
