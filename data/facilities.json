@@ -1,0 +1,686 @@
+[
+  {
+    "venue_id": "VEN-001",
+    "name": "Desert Hoops Center",
+    "city": "Phoenix",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": false,
+    "court_count": 1,
+    "hourly_rate": 35,
+    "amenities": [
+      "accessible entrance",
+      "bleachers",
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Outdoor asphalt basketball courts in Phoenix suited to recreational games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-002",
+    "name": "Westside Athletic Club",
+    "city": "Tempe",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 2,
+    "hourly_rate": 40,
+    "amenities": [
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Tempe suited to beginner games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-003",
+    "name": "Copper Court Complex",
+    "city": "Mesa",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 3,
+    "hourly_rate": 45,
+    "amenities": [
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Mesa suited to intermediate games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-004",
+    "name": "Sunrise Community Gym",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 4,
+    "hourly_rate": 50,
+    "amenities": [
+      "bleachers",
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Scottsdale suited to competitive games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-005",
+    "name": "Cityline Recreation Hall",
+    "city": "Tucson",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 1,
+    "hourly_rate": 55,
+    "amenities": [
+      "accessible entrance",
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Tucson suited to recreational games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-006",
+    "name": "Canyon Sports Hub",
+    "city": "Chandler",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": false,
+    "court_count": 2,
+    "hourly_rate": 60,
+    "amenities": [
+      "parking",
+      "restrooms"
+    ],
+    "description": "Outdoor asphalt basketball courts in Chandler suited to beginner games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-007",
+    "name": "Red Rock Athletics",
+    "city": "Glendale",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 3,
+    "hourly_rate": 65,
+    "amenities": [
+      "bleachers",
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Glendale suited to intermediate games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-008",
+    "name": "Central Hardwood Arena",
+    "city": "Gilbert",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 4,
+    "hourly_rate": 70,
+    "amenities": [
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Gilbert suited to competitive games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-009",
+    "name": "Riverside Fieldhouse",
+    "city": "Phoenix",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 1,
+    "hourly_rate": 75,
+    "amenities": [
+      "accessible entrance",
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Phoenix suited to recreational games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-010",
+    "name": "Skyline Training Center",
+    "city": "Tempe",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 2,
+    "hourly_rate": 80,
+    "amenities": [
+      "bleachers",
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Tempe suited to beginner games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-011",
+    "name": "Desert Hoops Center 2",
+    "city": "Mesa",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": false,
+    "court_count": 3,
+    "hourly_rate": 85,
+    "amenities": [
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Outdoor asphalt basketball courts in Mesa suited to intermediate games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-012",
+    "name": "Westside Athletic Club 2",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 4,
+    "hourly_rate": 90,
+    "amenities": [
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Scottsdale suited to competitive games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-013",
+    "name": "Copper Court Complex 2",
+    "city": "Tucson",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 1,
+    "hourly_rate": 35,
+    "amenities": [
+      "accessible entrance",
+      "bleachers",
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Tucson suited to recreational games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-014",
+    "name": "Sunrise Community Gym 2",
+    "city": "Chandler",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 2,
+    "hourly_rate": 40,
+    "amenities": [
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Chandler suited to beginner games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-015",
+    "name": "Cityline Recreation Hall 2",
+    "city": "Glendale",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 3,
+    "hourly_rate": 45,
+    "amenities": [
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Glendale suited to intermediate games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-016",
+    "name": "Canyon Sports Hub 2",
+    "city": "Gilbert",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": false,
+    "court_count": 4,
+    "hourly_rate": 50,
+    "amenities": [
+      "bleachers",
+      "parking",
+      "restrooms"
+    ],
+    "description": "Outdoor asphalt basketball courts in Gilbert suited to competitive games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-017",
+    "name": "Red Rock Athletics 2",
+    "city": "Phoenix",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 1,
+    "hourly_rate": 55,
+    "amenities": [
+      "accessible entrance",
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Phoenix suited to recreational games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-018",
+    "name": "Central Hardwood Arena 2",
+    "city": "Tempe",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 2,
+    "hourly_rate": 60,
+    "amenities": [
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Tempe suited to beginner games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-019",
+    "name": "Riverside Fieldhouse 2",
+    "city": "Mesa",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 3,
+    "hourly_rate": 65,
+    "amenities": [
+      "bleachers",
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Mesa suited to intermediate games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-020",
+    "name": "Skyline Training Center 2",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 4,
+    "hourly_rate": 70,
+    "amenities": [
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Scottsdale suited to competitive games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-021",
+    "name": "Desert Hoops Center 3",
+    "city": "Tucson",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": false,
+    "court_count": 1,
+    "hourly_rate": 75,
+    "amenities": [
+      "accessible entrance",
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Outdoor asphalt basketball courts in Tucson suited to recreational games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-022",
+    "name": "Westside Athletic Club 3",
+    "city": "Chandler",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 2,
+    "hourly_rate": 80,
+    "amenities": [
+      "bleachers",
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Chandler suited to beginner games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-023",
+    "name": "Copper Court Complex 3",
+    "city": "Glendale",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 3,
+    "hourly_rate": 85,
+    "amenities": [
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Glendale suited to intermediate games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-024",
+    "name": "Sunrise Community Gym 3",
+    "city": "Gilbert",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 4,
+    "hourly_rate": 90,
+    "amenities": [
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Gilbert suited to competitive games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-025",
+    "name": "Cityline Recreation Hall 3",
+    "city": "Phoenix",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 1,
+    "hourly_rate": 35,
+    "amenities": [
+      "accessible entrance",
+      "bleachers",
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Phoenix suited to recreational games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-026",
+    "name": "Canyon Sports Hub 3",
+    "city": "Tempe",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": false,
+    "court_count": 2,
+    "hourly_rate": 40,
+    "amenities": [
+      "parking",
+      "restrooms"
+    ],
+    "description": "Outdoor asphalt basketball courts in Tempe suited to beginner games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-027",
+    "name": "Red Rock Athletics 3",
+    "city": "Mesa",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 3,
+    "hourly_rate": 45,
+    "amenities": [
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Mesa suited to intermediate games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-028",
+    "name": "Central Hardwood Arena 3",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 4,
+    "hourly_rate": 50,
+    "amenities": [
+      "bleachers",
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Scottsdale suited to competitive games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-029",
+    "name": "Riverside Fieldhouse 3",
+    "city": "Tucson",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 1,
+    "hourly_rate": 55,
+    "amenities": [
+      "accessible entrance",
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Tucson suited to recreational games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-030",
+    "name": "Skyline Training Center 3",
+    "city": "Chandler",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 2,
+    "hourly_rate": 60,
+    "amenities": [
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Chandler suited to beginner games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-031",
+    "name": "Desert Hoops Center 4",
+    "city": "Glendale",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": false,
+    "court_count": 3,
+    "hourly_rate": 65,
+    "amenities": [
+      "bleachers",
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Outdoor asphalt basketball courts in Glendale suited to intermediate games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-032",
+    "name": "Westside Athletic Club 4",
+    "city": "Gilbert",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 4,
+    "hourly_rate": 70,
+    "amenities": [
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Gilbert suited to competitive games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-033",
+    "name": "Copper Court Complex 4",
+    "city": "Phoenix",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 1,
+    "hourly_rate": 75,
+    "amenities": [
+      "accessible entrance",
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Phoenix suited to recreational games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-034",
+    "name": "Sunrise Community Gym 4",
+    "city": "Tempe",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 2,
+    "hourly_rate": 80,
+    "amenities": [
+      "bleachers",
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Tempe suited to beginner games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-035",
+    "name": "Cityline Recreation Hall 4",
+    "city": "Mesa",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 3,
+    "hourly_rate": 85,
+    "amenities": [
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Mesa suited to intermediate games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-036",
+    "name": "Canyon Sports Hub 4",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": false,
+    "court_count": 4,
+    "hourly_rate": 90,
+    "amenities": [
+      "parking",
+      "restrooms"
+    ],
+    "description": "Outdoor asphalt basketball courts in Scottsdale suited to competitive games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-037",
+    "name": "Red Rock Athletics 4",
+    "city": "Tucson",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 1,
+    "hourly_rate": 35,
+    "amenities": [
+      "accessible entrance",
+      "bleachers",
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Tucson suited to recreational games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-038",
+    "name": "Central Hardwood Arena 4",
+    "city": "Chandler",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 2,
+    "hourly_rate": 40,
+    "amenities": [
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Chandler suited to beginner games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-039",
+    "name": "Riverside Fieldhouse 4",
+    "city": "Glendale",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 3,
+    "hourly_rate": 45,
+    "amenities": [
+      "parking",
+      "restrooms",
+      "scoreboard"
+    ],
+    "description": "Indoor hardwood basketball courts in Glendale suited to intermediate games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  },
+  {
+    "venue_id": "VEN-040",
+    "name": "Skyline Training Center 4",
+    "city": "Gilbert",
+    "state": "AZ",
+    "sport": "Basketball",
+    "indoor": true,
+    "court_count": 4,
+    "hourly_rate": 50,
+    "amenities": [
+      "bleachers",
+      "parking",
+      "restrooms"
+    ],
+    "description": "Indoor hardwood basketball courts in Gilbert suited to competitive games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+    "status": "active"
+  }
+]

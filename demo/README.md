@@ -1,0 +1,1 @@
+Each teammate should save sanitized sample live outputs with input, resulting output, agent trace where applicable, and model/mode metadata. Final group app must replay these records without OpenAI API key. Do not store real user information or secrets.
