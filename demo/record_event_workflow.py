@@ -72,6 +72,39 @@ def record_review_cases(recording, *, live):
         "review_result": result,
         "mode": "live" if live else "mock",
     }
+
+
+    beginner_rule = "Beginner players only."
+    advanced_draft = recording["additional_cases"]["event_details_2"]["generated_draft"]
+    beginner_only_draft = {
+        **advanced_draft,
+        "rules": [*advanced_draft["rules"], beginner_rule],
+    }
+
+    if live:
+        from features.event_reviewer import review_event
+
+        beginner_only_result = review_event(beginner_only_draft)
+    else:
+        beginner_only_result = {
+            "verdict": "needs_revision",
+            "issues": [
+                {
+                    "category": "contradiction",
+                    "evidence": beginner_rule,
+                    "suggestion": (
+                        "Do not restrict an advanced tournament to beginners, "
+                        "or change the advertised skill level."
+                    ),
+                }
+            ],
+        }
+
+    cases["beginner_only_advanced_event"] = {
+        "reviewed_listing": beginner_only_draft,
+        "review_result": beginner_only_result,
+        "mode": "live" if live else "mock",
+    }
     return cases
 
 
@@ -114,7 +147,6 @@ def main():
         "skill_level": "Advanced",
         "players": 18,
     }
-
     output_path = Path(__file__).with_name("event_workflow.json")
     if not args.live and output_path.exists():
         recording = json.loads(output_path.read_text(encoding="utf-8"))

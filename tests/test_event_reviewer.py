@@ -69,3 +69,20 @@ def test_advanced_only_demo_case():
         and issue["evidence"] == "Advanced players only."
         for issue in case["review_result"]["issues"]
     )
+
+def test_beginner_only_demo_case():
+    path = Path(__file__).resolve().parents[1] / "demo" / "event_workflow.json"
+    workflow = json.loads(path.read_text(encoding="utf-8"))
+    case = record_review_cases(workflow, live=False)["beginner_only_advanced_event"]
+
+    saved_case = workflow["review_cases"]["beginner_only_advanced_event"]
+    if saved_case["mode"] == "mock":
+        assert case == saved_case
+    assert case["reviewed_listing"]["skill_level"] == "Advanced"
+    assert "Beginner players only." in case["reviewed_listing"]["rules"]
+    assert case["review_result"]["verdict"] == "needs_revision"
+    assert any(
+        issue["category"] == "contradiction"
+        and issue["evidence"] == "Beginner players only."
+        for issue in case["review_result"]["issues"]
+    )

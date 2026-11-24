@@ -194,6 +194,38 @@
         ]
       },
       "mode": "mock"
+    },
+    "beginner_only_advanced_event": {
+      "reviewed_listing": {
+        "name": "Phoenix 3v3 Challenge",
+        "date": "2026-12-19",
+        "start_time": "11:00",
+        "end_time": "15:00",
+        "city": "Phoenix",
+        "venue_id": "VEN-001",
+        "format": "3v3",
+        "skill_level": "Advanced",
+        "players": 18,
+        "description": "Phoenix 3v3 Challenge is a 3v3 basketball tournament for 18 advanced players in Phoenix.",
+        "rules": [
+          "This division welcomes advanced players.",
+          "Follow referee decisions and avoid dangerous contact.",
+          "Take water breaks between games.",
+          "Beginner players only."
+        ],
+        "promotional_text": "Bring your team to Phoenix 3v3 Challenge and enjoy a day of basketball!"
+      },
+      "review_result": {
+        "verdict": "needs_revision",
+        "issues": [
+          {
+            "category": "contradiction",
+            "evidence": "Beginner players only.",
+            "suggestion": "Do not restrict an advanced tournament to beginners, or change the advertised skill level."
+          }
+        ]
+      },
+      "mode": "mock"
     }
   }
 }
