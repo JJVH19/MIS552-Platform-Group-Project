@@ -1,0 +1,172 @@
+{
+  "feature": "Chapter 6",
+  "mode": "live",
+  "recorded_at": "2026-11-24T01:44:07.766196+00:00",
+  "input": {
+    "booking_id": "BOOK-002",
+    "event_id": "EVT-029",
+    "venue_id": "VEN-005",
+    "date": "2026-12-16",
+    "start_time": "09:00",
+    "end_time": "12:00",
+    "status": "pending_approval"
+  },
+  "output": {
+    "messages": [
+      {
+        "step": 1,
+        "agent": "Athlete Advisor",
+        "recipient": "Event Planner",
+        "decision": "review",
+        "message": "The event format and skill level are suitable, but further confirmation is needed regarding the number of participants and facility reservation details.",
+        "evidence": [
+          "Event is a beginner 3v3 tournament, which aligns with the skill level stated.",
+          "Facility is indoor and has amenities suitable for the event."
+        ],
+        "concerns": [
+          "The event description mentions that registration details and facility reservation must be confirmed, indicating potential issues with participant capacity or booking status."
+        ],
+        "previous_messages_received": 0,
+        "model": "gpt-4o-mini-2024-07-18",
+        "mode": "live",
+        "usage": {
+          "input_tokens": 925,
+          "output_tokens": 93
+        }
+      },
+      {
+        "step": 2,
+        "agent": "Event Planner",
+        "recipient": "Facility Coordinator",
+        "decision": "review",
+        "message": "The proposal is valid and matches the event details, but further confirmation is needed regarding participant registration and facility reservation status. The event description indicates that these details must be confirmed, which raises concerns about potential issues with participant capacity or booking status.",
+        "evidence": [
+          "Event format and skill level are suitable for a beginner 3v3 tournament.",
+          "Facility is indoor and has amenities that align with the event requirements."
+        ],
+        "concerns": [
+          "Confirmation needed on the number of participants and registration details.",
+          "Facility reservation status must be verified as the event description indicates it requires confirmation."
+        ],
+        "previous_messages_received": 1,
+        "model": "gpt-4o-mini-2024-07-18",
+        "mode": "live",
+        "usage": {
+          "input_tokens": 1120,
+          "output_tokens": 118
+        }
+      },
+      {
+        "step": 3,
+        "agent": "Facility Coordinator",
+        "recipient": "Athlete Advisor",
+        "decision": "review",
+        "message": "The booking proposal is valid and the facility is active with available slots. However, the event description indicates that registration details and facility reservation must be confirmed, which raises concerns about participant capacity and booking status. Further clarification on these points is required before proceeding with the reservation.",
+        "evidence": [
+          "Facility is active and has available slots for the requested time.",
+          "Estimated cost for the booking is $165.00."
+        ],
+        "concerns": [
+          "Confirmation needed on participant registration details.",
+          "Facility reservation status must be verified as indicated in the event description."
+        ],
+        "previous_messages_received": 2,
+        "model": "gpt-4o-mini-2024-07-18",
+        "mode": "live",
+        "usage": {
+          "input_tokens": 1362,
+          "output_tokens": 112
+        }
+      },
+      {
+        "step": 4,
+        "agent": "Athlete Advisor",
+        "recipient": "Coordination Controller",
+        "decision": "review",
+        "message": "The event format and skill level are appropriate for a beginner 3v3 tournament, and the facility is suitable with necessary amenities. However, there are unresolved issues regarding participant registration and facility reservation status, as indicated in the event description. Further confirmation is required on these points before proceeding.",
+        "evidence": [
+          "Event is a beginner 3v3 tournament, which aligns with the skill level stated.",
+          "Facility is indoor and has amenities suitable for the event."
+        ],
+        "concerns": [
+          "Confirmation needed on participant registration details.",
+          "Facility reservation status must be verified as indicated in the event description."
+        ],
+        "previous_messages_received": 3,
+        "model": "gpt-4o-mini-2024-07-18",
+        "mode": "live",
+        "usage": {
+          "input_tokens": 1567,
+          "output_tokens": 122
+        }
+      }
+    ],
+    "proposal": {
+      "booking_id": "BOOK-002",
+      "event_id": "EVT-029",
+      "venue_id": "VEN-005",
+      "date": "2026-12-16",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "status": "pending_approval"
+    },
+    "approval_required": true,
+    "status": "needs_review",
+    "reason": "Outstanding concerns require human review or proposal revision.",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "event": {
+        "event_id": "EVT-029",
+        "name": "Saturday Basketball Social 3",
+        "sport": "Basketball",
+        "format": "3v3",
+        "date": "2026-12-16",
+        "start_time": "09:00",
+        "end_time": "12:00",
+        "venue_id": "VEN-005",
+        "city": "Tucson",
+        "skill_level": "Beginner",
+        "players": 12,
+        "entry_fee": 0,
+        "description": "Beginner 3v3 tournament at Cityline Recreation Hall in Tucson. Registration details and facility reservation must be confirmed.",
+        "status": "published"
+      },
+      "facility": {
+        "venue_id": "VEN-005",
+        "name": "Cityline Recreation Hall",
+        "city": "Tucson",
+        "state": "AZ",
+        "sport": "Basketball",
+        "indoor": true,
+        "court_count": 1,
+        "hourly_rate": 55,
+        "amenities": [
+          "accessible entrance",
+          "parking",
+          "restrooms",
+          "scoreboard"
+        ],
+        "description": "Indoor hardwood basketball courts in Tucson suited to recreational games and small 3v3 tournaments. Booking requests require facility-manager approval.",
+        "status": "active"
+      },
+      "matching_slots": [
+        {
+          "slot_id": "SLOT-0021",
+          "venue_id": "VEN-005",
+          "date": "2026-12-16",
+          "start_time": "09:00",
+          "end_time": "12:00",
+          "available": true
+        }
+      ],
+      "estimated_cost": 165.0
+    },
+    "step_count": 4,
+    "max_steps": 6,
+    "human_approved": false,
+    "can_approve": false,
+    "booking_executed": false
+  }
+}
