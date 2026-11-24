@@ -10,7 +10,7 @@ class EventCopy(BaseModel):
     rules: list[str]
     promotional_text: str
 
-
+#Code written with assistance of CODEX
 def generate_event(event_details: dict) -> dict:
     load_dotenv(Path(__file__).resolve().parents[1] / ".env")
     client = OpenAI()
@@ -35,6 +35,7 @@ def generate_event(event_details: dict) -> dict:
     return {**event_details, **copy.model_dump()}
 
 
+#Code used for testing purposes
 if __name__ == "__main__":
     from pprint import pprint
     from features.event_reviewer import review_event

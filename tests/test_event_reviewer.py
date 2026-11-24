@@ -1,5 +1,9 @@
+import json
+from pathlib import Path
+
 import pytest
 
+from demo.record_event_workflow import record_review_cases
 from features.event_reviewer import review_event
 
 
@@ -47,3 +51,21 @@ def test_review_event(changes, expected_category):
             issue["category"] == expected_category
             for issue in result["issues"]
         ), result
+
+
+def test_advanced_only_demo_case():
+    path = Path(__file__).resolve().parents[1] / "demo" / "event_workflow.json"
+    workflow = json.loads(path.read_text(encoding="utf-8"))
+    case = record_review_cases(workflow, live=False)["advanced_only_rule"]
+
+    saved_case = workflow["review_cases"]["advanced_only_rule"]
+    if saved_case["mode"] == "mock":
+        assert case == saved_case
+    assert case["reviewed_listing"]["skill_level"] == "Beginner"
+    assert "Advanced players only." in case["reviewed_listing"]["rules"]
+    assert case["review_result"]["verdict"] == "needs_revision"
+    assert any(
+        issue["category"] == "contradiction"
+        and issue["evidence"] == "Advanced players only."
+        for issue in case["review_result"]["issues"]
+    )
