@@ -1,0 +1,18 @@
+
+test_01_application_launch (test_coordination_ui.TestCoordinationUI.test_01_application_launch) ... 2026-11-24 01:57:59.148 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_02_run_cached_coordination (test_coordination_ui.TestCoordinationUI.test_02_run_cached_coordination) ... 2026-11-24 01:58:00.716 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_03_unresolved_approval_disabled (test_coordination_ui.TestCoordinationUI.test_03_unresolved_approval_disabled) ... 2026-11-24 01:58:02.881 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_04_interactive_approval (test_coordination_ui.TestCoordinationUI.test_04_interactive_approval) ... 2026-11-24 01:58:04.954 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_05_interactive_rejection (test_coordination_ui.TestCoordinationUI.test_05_interactive_rejection) ... 2026-11-24 01:58:06.544 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_06_mode_change_clears_old_result (test_coordination_ui.TestCoordinationUI.test_06_mode_change_clears_old_result) ... 2026-11-24 01:58:07.959 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 13.734s
+
+OK
