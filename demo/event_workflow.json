@@ -1,0 +1,231 @@
+{
+  "organizer_input": {
+    "name": "Desert Rookie 3v3",
+    "date": "2026-12-12",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "city": "Phoenix",
+    "venue_id": "VEN-001",
+    "format": "3v3",
+    "skill_level": "Beginner",
+    "players": 12
+  },
+  "generated_draft": {
+    "name": "Desert Rookie 3v3",
+    "date": "2026-12-12",
+    "start_time": "10:00",
+    "end_time": "14:00",
+    "city": "Phoenix",
+    "venue_id": "VEN-001",
+    "format": "3v3",
+    "skill_level": "Beginner",
+    "players": 12,
+    "description": "Join us for the Desert Rookie 3v3 basketball tournament in Phoenix, where new talent shines! This exciting event is designed for beginner players looking to showcase their skills on the court. Team up with friends, make new ones, and compete in a fun and supportive environment. Come out and enjoy a day filled with basketball, community spirit, and friendly competition!",
+    "rules": [
+      "Teams consist of 3 players each with a maximum of 12 teams participating.",
+      "Games are played to 15 points, and you must win by 2.",
+      "Each game has a 10-minute time limit; the team with the most points at the end wins.",
+      "Out-of-bounds and fouls will be called by the referees; sportsmanship is encouraged at all times.",
+      "No dunking allowed during the tournament for safety reasons.",
+      "Players must arrive 15 minutes prior to their scheduled game to check-in."
+    ],
+    "promotional_text": "Unleash your inner athlete at the Desert Rookie 3v3 tournament! Perfect for players just starting out to learn the game, build teamwork skills, and have fun. Don't miss out\u2014join us for a fantastic day of hoops and camaraderie in the heart of Phoenix!"
+  },
+  "review_result": {
+    "verdict": "pass",
+    "issues": []
+  },
+  "additional_cases": {
+    "event_details_1": {
+      "organizer_input": {
+        "name": "Scottsdale Weekend Hoops",
+        "date": "2026-12-13",
+        "start_time": "09:00",
+        "end_time": "13:00",
+        "city": "Scottsdale",
+        "venue_id": "VEN-004",
+        "format": "5v5",
+        "skill_level": "Intermediate",
+        "players": 20
+      },
+      "generated_draft": {
+        "name": "Scottsdale Weekend Hoops",
+        "date": "2026-12-13",
+        "start_time": "09:00",
+        "end_time": "13:00",
+        "city": "Scottsdale",
+        "venue_id": "VEN-004",
+        "format": "5v5",
+        "skill_level": "Intermediate",
+        "players": 20,
+        "description": "Scottsdale Weekend Hoops is a 5v5 basketball tournament for 20 intermediate players in Scottsdale.",
+        "rules": [
+          "This division welcomes intermediate players.",
+          "Follow referee decisions and avoid dangerous contact.",
+          "Take water breaks between games."
+        ],
+        "promotional_text": "Bring your team to Scottsdale Weekend Hoops and enjoy a day of basketball!"
+      },
+      "review_result": {
+        "verdict": "pass",
+        "issues": []
+      },
+      "mode": "mock"
+    },
+    "event_details_2": {
+      "organizer_input": {
+        "name": "Phoenix 3v3 Challenge",
+        "date": "2026-12-19",
+        "start_time": "11:00",
+        "end_time": "15:00",
+        "city": "Phoenix",
+        "venue_id": "VEN-001",
+        "format": "3v3",
+        "skill_level": "Advanced",
+        "players": 18
+      },
+      "generated_draft": {
+        "name": "Phoenix 3v3 Challenge",
+        "date": "2026-12-19",
+        "start_time": "11:00",
+        "end_time": "15:00",
+        "city": "Phoenix",
+        "venue_id": "VEN-001",
+        "format": "3v3",
+        "skill_level": "Advanced",
+        "players": 18,
+        "description": "Phoenix 3v3 Challenge is a 3v3 basketball tournament for 18 advanced players in Phoenix.",
+        "rules": [
+          "This division welcomes advanced players.",
+          "Follow referee decisions and avoid dangerous contact.",
+          "Take water breaks between games."
+        ],
+        "promotional_text": "Bring your team to Phoenix 3v3 Challenge and enjoy a day of basketball!"
+      },
+      "review_result": {
+        "verdict": "pass",
+        "issues": []
+      },
+      "mode": "mock"
+    }
+  },
+  "review_cases": {
+    "event_details_1": {
+      "reviewed_listing": {
+        "name": "Scottsdale Weekend Hoops",
+        "date": "2026-12-13",
+        "start_time": "09:00",
+        "end_time": "13:00",
+        "city": "Scottsdale",
+        "venue_id": "VEN-004",
+        "format": "5v5",
+        "skill_level": "Intermediate",
+        "players": 20,
+        "description": "Scottsdale Weekend Hoops is a 5v5 basketball tournament for 20 intermediate players in Scottsdale.",
+        "rules": [
+          "This division welcomes intermediate players.",
+          "Follow referee decisions and avoid dangerous contact.",
+          "Take water breaks between games."
+        ],
+        "promotional_text": "Bring your team to Scottsdale Weekend Hoops and enjoy a day of basketball!"
+      },
+      "review_result": {
+        "verdict": "pass",
+        "issues": []
+      },
+      "mode": "mock"
+    },
+    "event_details_2": {
+      "reviewed_listing": {
+        "name": "Phoenix 3v3 Challenge",
+        "date": "2026-12-19",
+        "start_time": "11:00",
+        "end_time": "15:00",
+        "city": "Phoenix",
+        "venue_id": "VEN-001",
+        "format": "3v3",
+        "skill_level": "Advanced",
+        "players": 18,
+        "description": "Phoenix 3v3 Challenge is a 3v3 basketball tournament for 18 advanced players in Phoenix.",
+        "rules": [
+          "This division welcomes advanced players.",
+          "Follow referee decisions and avoid dangerous contact.",
+          "Take water breaks between games."
+        ],
+        "promotional_text": "Bring your team to Phoenix 3v3 Challenge and enjoy a day of basketball!"
+      },
+      "review_result": {
+        "verdict": "pass",
+        "issues": []
+      },
+      "mode": "mock"
+    },
+    "advanced_only_rule": {
+      "reviewed_listing": {
+        "name": "Desert Rookie 3v3",
+        "date": "2026-12-12",
+        "start_time": "10:00",
+        "end_time": "14:00",
+        "city": "Phoenix",
+        "venue_id": "VEN-001",
+        "format": "3v3",
+        "skill_level": "Beginner",
+        "players": 12,
+        "description": "Join us for the Desert Rookie 3v3 basketball tournament in Phoenix, where new talent shines! This exciting event is designed for beginner players looking to showcase their skills on the court. Team up with friends, make new ones, and compete in a fun and supportive environment. Come out and enjoy a day filled with basketball, community spirit, and friendly competition!",
+        "rules": [
+          "Teams consist of 3 players each with a maximum of 12 teams participating.",
+          "Games are played to 15 points, and you must win by 2.",
+          "Each game has a 10-minute time limit; the team with the most points at the end wins.",
+          "Out-of-bounds and fouls will be called by the referees; sportsmanship is encouraged at all times.",
+          "No dunking allowed during the tournament for safety reasons.",
+          "Players must arrive 15 minutes prior to their scheduled game to check-in.",
+          "Advanced players only."
+        ],
+        "promotional_text": "Unleash your inner athlete at the Desert Rookie 3v3 tournament! Perfect for players just starting out to learn the game, build teamwork skills, and have fun. Don't miss out\u2014join us for a fantastic day of hoops and camaraderie in the heart of Phoenix!"
+      },
+      "review_result": {
+        "verdict": "needs_revision",
+        "issues": [
+          {
+            "category": "contradiction",
+            "evidence": "Advanced players only.",
+            "suggestion": "Allow beginners to enter or change the advertised skill level."
+          }
+        ]
+      },
+      "mode": "mock"
+    },
+    "beginner_only_advanced_event": {
+      "reviewed_listing": {
+        "name": "Phoenix 3v3 Challenge",
+        "date": "2026-12-19",
+        "start_time": "11:00",
+        "end_time": "15:00",
+        "city": "Phoenix",
+        "venue_id": "VEN-001",
+        "format": "3v3",
+        "skill_level": "Advanced",
+        "players": 18,
+        "description": "Phoenix 3v3 Challenge is a 3v3 basketball tournament for 18 advanced players in Phoenix.",
+        "rules": [
+          "This division welcomes advanced players.",
+          "Follow referee decisions and avoid dangerous contact.",
+          "Take water breaks between games.",
+          "Beginner players only."
+        ],
+        "promotional_text": "Bring your team to Phoenix 3v3 Challenge and enjoy a day of basketball!"
+      },
+      "review_result": {
+        "verdict": "needs_revision",
+        "issues": [
+          {
+            "category": "contradiction",
+            "evidence": "Beginner players only.",
+            "suggestion": "Do not restrict an advanced tournament to beginners, or change the advertised skill level."
+          }
+        ]
+      },
+      "mode": "mock"
+    }
+  }
+}
