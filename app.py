@@ -9,6 +9,8 @@ Academic prototype with fictional marketplace data and mock-only bookings.
 """
 
 import json
+import hashlib
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 import streamlit as st
@@ -170,23 +172,100 @@ tabs = st.tabs([
 
 with tabs[0]:
     st.subheader("Event Creator — Chapter 2")
-    st.write("Explore basketball tournament listings generated using the AI Event Creator.")
-    st.caption("Cached demonstration: previously generated event examples.")
+    st.write("Generate a fictional basketball tournament listing using an AI model, or view saved examples.")
 
-    try:
-        generated_events = load_generated_events()
-        if not generated_events:
-            st.info("No generated events available.")
-        else:
-            selected_index = st.selectbox(
-                "Select a generated event",
-                options=range(len(generated_events)),
-                format_func=lambda index: generated_events[index].get("name", "Untitled Event"),
-                key="creator_event_select",
-            )
-            display_generated_event(generated_events[selected_index])
-    except (OSError, ValueError, KeyError, TypeError) as error:
-        st.error(f"Unable to load generated events: {error}")
+    creator_mode = st.radio(
+        "Event Creator mode",
+        ["Cached examples", "Live generation"],
+        horizontal=True,
+        key="creator_mode",
+    )
+
+    if creator_mode == "Cached examples":
+        st.caption("Previously recorded drafts. No API key or new model call is needed.")
+        try:
+            generated_events = load_generated_events()
+            if not generated_events:
+                st.info("No generated events available.")
+            else:
+                selected_index = st.selectbox(
+                    "Select a generated event",
+                    options=range(len(generated_events)),
+                    format_func=lambda index: generated_events[index].get("name", "Untitled Event"),
+                    key="creator_event_select",
+                )
+                display_generated_event(generated_events[selected_index])
+        except (OSError, ValueError, KeyError, TypeError) as error:
+            st.error(f"Unable to load generated events: {error}")
+
+    else:
+        st.info(
+            "Live generation calls OpenAI only when you click Generate event. "
+            "An OPENAI_API_KEY is required; model usage may incur charges. "
+            "Drafts remain in this browser session and are not added to the booking database."
+        )
+        with st.form("live_event_generator"):
+            name = st.text_input("Tournament name", value="Arizona Community Hoops")
+            city = st.text_input("City", value="Tucson")
+            venue_id = st.text_input("Fictional venue ID", value="VEN-005")
+            event_date = st.date_input("Tournament date", value=date.today() + timedelta(days=7))
+            col_start, col_end = st.columns(2)
+            with col_start:
+                start_time = st.text_input("Start time (HH:MM)", value="09:00")
+            with col_end:
+                end_time = st.text_input("End time (HH:MM)", value="12:00")
+            col_format, col_skill = st.columns(2)
+            with col_format:
+                event_format = st.selectbox("Tournament format", ["3v3", "5v5", "pickup", "training"])
+            with col_skill:
+                skill_level = st.selectbox(
+                    "Skill level", ["Beginner", "Intermediate", "Advanced", "Competitive", "Recreational"]
+                )
+            players = st.number_input("Number of players", min_value=1, max_value=500, value=12)
+            generate_clicked = st.form_submit_button("Generate event with AI")
+
+        if generate_clicked:
+            try:
+                parsed_start = datetime.strptime(start_time.strip(), "%H:%M")
+                parsed_end = datetime.strptime(end_time.strip(), "%H:%M")
+                if parsed_start.strftime("%H:%M") != start_time.strip() or parsed_end.strftime("%H:%M") != end_time.strip():
+                    raise ValueError("Times must use HH:MM.")
+                if parsed_end <= parsed_start:
+                    raise ValueError("End time must be after start time.")
+                if not name.strip() or not city.strip() or not venue_id.strip():
+                    raise ValueError("Name, city, and venue ID are required.")
+
+                details = {
+                    "name": name.strip(),
+                    "city": city.strip(),
+                    "venue_id": venue_id.strip().upper(),
+                    "date": event_date.isoformat(),
+                    "start_time": start_time.strip(),
+                    "end_time": end_time.strip(),
+                    "format": event_format,
+                    "skill_level": skill_level,
+                    "players": int(players),
+                }
+
+                # Keep the API feature authored by Person 2; no new prompt or client here.
+                from features.content_generator import generate_event
+
+                with st.spinner("Generating tournament listing with AI..."):
+                    generated = generate_event(details)
+                st.session_state["live_generated_event"] = generated
+                st.session_state.pop("live_event_review", None)
+                st.success("Draft generated. Open Event Reviewer to assess it.")
+            except ValueError as error:
+                st.error(str(error))
+            except Exception as error:
+                st.error(
+                    "Live generation was unsuccessful "
+                    f"({type(error).__name__}). Check OPENAI_API_KEY and your connection."
+                )
+
+        if st.session_state.get("live_generated_event"):
+            st.caption("Most recently generated live draft (not saved to events.json)")
+            display_generated_event(st.session_state["live_generated_event"])
 
 
 # --------------------------------------------------
@@ -196,37 +275,128 @@ with tabs[0]:
 with tabs[1]:
     st.subheader("Event Reviewer — Chapter 3")
     st.write(
-        "Inspect AI reviews for missing information, contradictory rules, "
-        "and safety concerns."
+        "Inspect potential missing information, contradictory rules, and safety concerns."
     )
-    st.caption("Cached demonstration: saved review results.")
 
-    try:
-        event_reviews = load_event_reviews()
-        if not event_reviews:
-            st.info("No event reviews available.")
-        else:
-            review_labels = []
-            for review in event_reviews:
-                name = review.get("reviewed_listing", {}).get("name", "Untitled Event")
-                review_result = review.get("review_result", {})
-                verdict = review_result.get("verdict", "unknown").replace("_", " ").title()
-                issues = review_result.get("issues", [])
-                category = (
-                    issues[0].get("category", "").replace("_", " ").title()
-                    if issues else "No issues"
+    reviewer_mode = st.radio(
+        "Event Reviewer mode",
+        ["Cached examples", "Live review"],
+        horizontal=True,
+        key="reviewer_mode",
+    )
+
+    if reviewer_mode == "Cached examples":
+        st.caption("Recorded review outcomes. No OpenAI API call is made.")
+        try:
+            event_reviews = load_event_reviews()
+            if not event_reviews:
+                st.info("No event reviews available.")
+            else:
+                review_labels = []
+                for review in event_reviews:
+                    event_name = review.get("reviewed_listing", {}).get("name", "Untitled Event")
+                    review_result = review.get("review_result", {})
+                    verdict = review_result.get("verdict", "unknown").replace("_", " ").title()
+                    issues = review_result.get("issues", [])
+                    category = (
+                        issues[0].get("category", "").replace("_", " ").title()
+                        if issues else "No issues"
+                    )
+                    review_labels.append(f"{event_name} — {verdict} ({category})")
+
+                selected_index = st.selectbox(
+                    "Select a reviewed event",
+                    options=range(len(event_reviews)),
+                    format_func=lambda index: review_labels[index],
+                    key="reviewer_event_select",
                 )
-                review_labels.append(f"{name} — {verdict} ({category})")
+                display_event_review(event_reviews[selected_index])
+        except (OSError, ValueError, KeyError, TypeError) as error:
+            st.error(f"Unable to load event reviews: {error}")
 
-            selected_index = st.selectbox(
-                "Select a reviewed event",
-                options=range(len(event_reviews)),
-                format_func=lambda index: review_labels[index],
-                key="reviewer_event_select",
+    else:
+        st.info(
+            "Live review calls OpenAI only when you click Review with AI. "
+            "An OPENAI_API_KEY is required; model usage may incur charges. "
+            "You can edit the rules before running the reviewer."
+        )
+
+        review_options = []
+        last_generated = st.session_state.get("live_generated_event")
+        if isinstance(last_generated, dict):
+            review_options.append(("Most recent live-generated draft", last_generated))
+        try:
+            review_options.extend(
+                (f"Saved example: {event.get('name', 'Untitled Event')} ({index + 1})", event)
+                for index, event in enumerate(load_generated_events())
             )
-            display_event_review(event_reviews[selected_index])
-    except (OSError, ValueError, KeyError, TypeError) as error:
-        st.error(f"Unable to load event reviews: {error}")
+        except (OSError, ValueError, KeyError, TypeError):
+            pass
+
+        if not review_options:
+            st.warning("No listing is available to review. Create a draft in Event Creator.")
+        else:
+            selected_source = st.selectbox(
+                "Listing to review",
+                options=range(len(review_options)),
+                format_func=lambda index: review_options[index][0],
+                key="reviewer_live_source",
+            )
+            source_event = review_options[selected_source][1]
+            source_key = hashlib.sha256(
+                json.dumps(source_event, sort_keys=True).encode("utf-8")
+            ).hexdigest()[:12]
+
+            st.markdown(
+                f"**Event:** {source_event.get('name', 'Untitled Event')} "
+                f"| **Skill:** {source_event.get('skill_level', 'Not supplied')}"
+            )
+            edited_description = st.text_area(
+                "Description",
+                value=source_event.get("description", ""),
+                key=f"review_description_{source_key}",
+            )
+            edited_rules = st.text_area(
+                "Rules — one rule per line",
+                value="\n".join(source_event.get("rules", [])),
+                height=175,
+                key=f"review_rules_{source_key}",
+                help='For example, add "Advanced players only." to a beginner event to test contradiction detection.',
+            )
+            event_to_review = {
+                **source_event,
+                "description": edited_description.strip(),
+                "rules": [line.strip() for line in edited_rules.splitlines() if line.strip()],
+            }
+            current_signature = json.dumps(event_to_review, sort_keys=True)
+
+            if st.button("Review with AI", key="run_live_reviewer", type="primary"):
+                try:
+                    from features.event_reviewer import review_event
+
+                    with st.spinner("Reviewing tournament listing with AI..."):
+                        review_result = review_event(event_to_review)
+
+                    st.session_state["live_event_review"] = {
+                        "signature": current_signature,
+                        "case": {
+                            "reviewed_listing": event_to_review,
+                            "review_result": review_result,
+                        },
+                    }
+                    st.success("Live review complete.")
+                except Exception as error:
+                    st.session_state.pop("live_event_review", None)
+                    st.error(
+                        "Live review was unsuccessful "
+                        f"({type(error).__name__}). Check OPENAI_API_KEY and your connection."
+                    )
+
+            last_review = st.session_state.get("live_event_review")
+            if isinstance(last_review, dict) and last_review.get("signature") == current_signature:
+                display_event_review(last_review["case"])
+            elif isinstance(last_review, dict):
+                st.caption("The listing has changed. Run Review with AI to evaluate the latest edits.")
 
 
 # --------------------------------------------------
