@@ -18,7 +18,7 @@ import streamlit as st
 from booking_tools import confirm_booking, propose_booking, reject_booking
 from features.coordination_ui import render_coordination
 from features.coordination_validation import validate_booking
-from features.retrieval import search
+from features.retrieval import documents, search
 from scheduling_agent import create_plan, execute_plan
 
 
@@ -405,7 +405,10 @@ with tabs[1]:
 
 with tabs[2]:
     st.subheader("Event Discovery — Chapter 4")
-    st.write("Discover synthetic courts and events using keyword, semantic, or hybrid retrieval.")
+    st.write(
+        "Find fictional basketball courts and events using BM25, "
+        "semantic search, or hybrid retrieval with structured filters."
+    )
 
     kind = st.radio(
         "Search category", ["courts", "events"],
@@ -416,6 +419,7 @@ with tabs[2]:
         value="indoor competitive basketball court in Tempe",
         key="discovery_query",
     )
+
     method_col, results_col = st.columns(2)
     with method_col:
         method = st.selectbox(
@@ -428,33 +432,120 @@ with tabs[2]:
             value=5, key="discovery_k",
         )
 
-    if query.strip():
-        try:
-            with st.spinner("Ranking synthetic listings..."):
-                output = search(query, kind, method, k)
-            st.caption("Retrieval engine: " + str(output.get("mode", method)))
+    filters = {}
+    try:
+        listings = documents(kind)
+        cities = sorted({item["city"] for item in listings})
+        st.markdown("#### Refine results")
+        city = st.selectbox(
+            "City", ["Any city", *cities], key="discovery_city"
+        )
+        if city != "Any city":
+            filters["city"] = city
+
+        if kind == "events":
+            skill_col, format_col = st.columns(2)
+            with skill_col:
+                skills = sorted({item["skill_level"] for item in listings})
+                skill = st.selectbox(
+                    "Skill level", ["Any level", *skills],
+                    key="discovery_skill",
+                )
+                if skill != "Any level":
+                    filters["skill_level"] = skill
+            with format_col:
+                formats = sorted({item["format"] for item in listings})
+                event_format = st.selectbox(
+                    "Event format", ["Any format", *formats],
+                    key="discovery_event_format",
+                )
+                if event_format != "Any format":
+                    filters["format"] = event_format
+        else:
+            indoor_col, rate_col = st.columns(2)
+            with indoor_col:
+                court_type = st.selectbox(
+                    "Court type", ["Any", "Indoor", "Outdoor"],
+                    key="discovery_court_type",
+                )
+                if court_type != "Any":
+                    filters["indoor"] = court_type == "Indoor"
+            with rate_col:
+                highest_rate = int(max(item["hourly_rate"] for item in listings))
+                max_rate = st.slider(
+                    "Maximum hourly rate ($)", min_value=0,
+                    max_value=highest_rate, value=highest_rate,
+                    key="discovery_max_rate",
+                )
+                if max_rate < highest_rate:
+                    filters["max_hourly_rate"] = max_rate
+
+            amenities = sorted({
+                amenity
+                for item in listings
+                for amenity in item.get("amenities", [])
+            })
+            selected_amenities = st.multiselect(
+                "Required amenities (must include all selected)",
+                options=amenities,
+                key="discovery_amenities",
+            )
+            if selected_amenities:
+                filters["amenities"] = selected_amenities
+
+        if query.strip():
+            with st.spinner("Ranking matching synthetic listings..."):
+                output = search(query, kind, method, k, filters=filters)
+            st.caption(
+                f"Retrieval engine: {output.get('mode', method)} · "
+                f"{output.get('total_candidates', 0)} listings match the filters"
+            )
             if output.get("warning"):
                 st.warning(output["warning"])
 
             results = output.get("results", [])
             if not results:
-                st.info("No matching listings found. Try a different search.")
+                st.info(
+                    "No listings match those filters. Try another city, "
+                    "court type, amenity, or skill level."
+                )
+
             for item in results:
                 with st.container(border=True):
                     st.markdown("**" + str(item.get("name", "Unnamed")) + "**")
-                    listing_id = item.get("venue_id", item.get("event_id", ""))
+                    listing_id = item.get(
+    "event_id" if kind == "events" else "venue_id", ""
+)
                     st.caption(
                         f"ID: {listing_id} | City: {item.get('city', 'Unknown')} "
                         f"| Score: {item.get('score', 'N/A')}"
                     )
+                    if kind == "courts":
+                        st.caption(
+                            ("Indoor" if item.get("indoor") else "Outdoor")
+                            + f" · ${item.get('hourly_rate', 'N/A')}/hour"
+                            + " · Amenities: " + ", ".join(item.get("amenities", []))
+                        )
+                    else:
+                        st.caption(
+                            f"{item.get('format', 'Unknown format')} · "
+                            f"{item.get('skill_level', 'Unknown skill')} · "
+                            f"{item.get('date', 'Unknown date')}"
+                        )
                     st.write(item.get("description", ""))
-                    st.caption("Why matched: " + str(item.get("why_match", "No explanation available")))
-        except (ValueError, OSError, KeyError) as error:
-            st.error(f"Event Discovery failed: {error}")
-    else:
-        st.info("Enter a search query to discover listings.")
+                    st.caption(
+                        "Why matched: " + str(
+                            item.get("why_match", "No explanation available")
+                        )
+                    )
+        else:
+            st.info("Enter a search query to discover listings.")
+
+    except (ValueError, OSError, KeyError, TypeError) as error:
+        st.error(f"Event Discovery failed: {error}")
 
 
+# --------------------------------------------------
 # --------------------------------------------------
 # Tab 4: Booking Assistant (Person 3)
 # --------------------------------------------------
